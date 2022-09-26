@@ -14,11 +14,10 @@ public class Hacker extends Hero {
     public void applySuperPower(Boss boss, Hero[] heroes) {
         int counter2 = 0;
         for (int i = 0; i <heroes.length ; i++) {
-          if (heroes[i].getHealth() > 0) {
+          if (heroes[i].getHealth() > 0 && heroes[i] != this) {
               counter2 = counter2 + 1;
           }
         }
-
         while (true) {
             if (counter2 > 0) {
                  randomHacker = RPG_Game.random.nextInt(heroes.length);
