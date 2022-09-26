@@ -37,15 +37,5 @@ public class Hacker extends Hero {
         }
 
     }
-
-    public int count1(Hero[] heroes) {
-        int counter2 = 0;
-        for (int i = 0; i < heroes.length; i++) {
-if (heroes[i].getHealth() > 0){
-    counter2 = counter2 + 1;
-}
-        }
-        return counter2;
-    }
 }
 
